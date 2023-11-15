@@ -1,5 +1,14 @@
 #include "shell.h"
 
+/* Global environemnt */
+extern char **environ;
+
+/* Global program name */
+char *name;
+
+/* Global history counter */
+int hist;
+
 char **_copyenv(void);
 void free_env(void);
 char **_getenv(const char *var);

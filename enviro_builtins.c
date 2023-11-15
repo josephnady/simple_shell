@@ -1,5 +1,14 @@
 #include "shell.h"
 
+/* Global environemnt */
+extern char **environ;
+
+/* Global program name */
+char *name;
+
+/* Global history counter */
+int hist;
+
 int shellby_env(char **args, char __attribute__((__unused__)) **front);
 int shellby_setenv(char **args, char __attribute__((__unused__)) **front);
 int shellby_unsetenv(char **args, char __attribute__((__unused__)) **front);
