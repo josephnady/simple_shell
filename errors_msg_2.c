@@ -53,7 +53,7 @@ char *error_127(char **args)
 		return (NULL);
 
 	/* len = _strlen(name) + _strlen(hist_str) + _strlen(args[0]) + 16; */
-	len = _strlen(name) + _strlen(args[0]) + 16;
+	len = _strlen(name) + 16;
 	error = malloc(sizeof(char) * (len + 1));
 	if (!error)
 	{
@@ -62,10 +62,10 @@ char *error_127(char **args)
 	}
 
 	_strcpy(error, name);
-	_strcat(error, ": ");
+	/*_strcat(error, ": "); */
 	/* _strcat(error, hist_str); */
 	/* _strcat(error, ": "); */
-	_strcat(error, args[0]);
+	/* _strcat(error, args[0]); */
 	_strcat(error, ": No such file or directory\n");
 
 	free(hist_str);
