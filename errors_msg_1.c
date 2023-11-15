@@ -57,7 +57,7 @@ char *error_1(char **args)
 		return (NULL);
 
 	_strcpy(error, "alias: ");
-	/* _strcat(error, args[0]); */
+	_strcat(error, args[0]);
 	_strcat(error, " No such file or directory\n");
 
 	return (error);

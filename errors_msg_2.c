@@ -63,8 +63,8 @@ char *error_127(char **args)
 
 	_strcpy(error, name);
 	_strcat(error, ": ");
-	_strcat(error, hist_str);
-	_strcat(error, ": ");
+	/* _strcat(error, hist_str); */
+	/* _strcat(error, ": "); */
 	_strcat(error, args[0]);
 	_strcat(error, ": No such file or directory\n");
 
