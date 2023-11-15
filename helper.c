@@ -153,3 +153,4 @@ void variable_replacement(char **line, int *exe_ret)
 		}
 	}
 }
+
