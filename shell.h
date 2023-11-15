@@ -15,12 +15,12 @@
 #define EXIT -3
 
 
-// /* Global environemnt */
-// extern char **environ;
-// /* Global program name */
-// char *name;
-// /* Global history counter */
-// int hist;
+/* Global environemnt */
+/* extern char **environ; */
+/* Global program name */
+/* char *name; */
+/* Global history counter */
+/* int hist; */
 
 
 /**
