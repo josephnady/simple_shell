@@ -16,11 +16,11 @@
 
 
 /* Global environemnt */
-/* extern char **environ; */
+extern char **environ;
 /* Global program name */
-/* char *name; */
+char *name;
 /* Global history counter */
-/* int hist; */
+int hist;
 
 
 /**
