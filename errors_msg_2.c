@@ -52,8 +52,7 @@ char *error_127(char **args)
 	if (!hist_str)
 		return (NULL);
 
-	/* len = _strlen(name) + _strlen(hist_str) + _strlen(args[0]) + 16; */
-	len = _strlen(name) + 16;
+	len = _strlen(name) + _strlen(hist_str) + _strlen(args[0]) + 16;
 	error = malloc(sizeof(char) * (len + 1));
 	if (!error)
 	{
