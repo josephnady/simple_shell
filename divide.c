@@ -72,7 +72,7 @@ char **_strtok(char *line, char *delim)
 	
 	if (tokens > 1)
 	{
-		ret = error_127('a');
+		ret = error_127(1);
 		return (ret);
 	}
 
