@@ -68,6 +68,9 @@ char **_strtok(char *line, char *delim)
 	tokens = count_tokens(line, delim);
 	if (tokens == 0)
 		return (NULL);
+	
+	if (tokens > 1)
+		return (error_127);
 
 	ptr = malloc(sizeof(char *) * (tokens + 2));
 	if (!ptr)
