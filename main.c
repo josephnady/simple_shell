@@ -35,7 +35,10 @@ int execute(char **args, char **front)
 		flag = 1;
 		command = get_location(command);
 	}
-
+	if (_strlen(command) > 1)
+	{
+		ret = (create_error(args,127));
+	}
 	if (!command || (access(command, F_OK) == -1))
 	{
 		if (errno == EACCES)
