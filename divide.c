@@ -64,13 +64,17 @@ char **_strtok(char *line, char *delim)
 {
 	char **ptr;
 	int index = 0, tokens, t, letters, l;
+	int ret = 0;
 
 	tokens = count_tokens(line, delim);
 	if (tokens == 0)
 		return (NULL);
 	
 	if (tokens > 1)
-		return (error_127);
+	{
+		ret = error_127('a');
+		return (ret);
+	}
 
 	ptr = malloc(sizeof(char *) * (tokens + 2));
 	if (!ptr)
