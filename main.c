@@ -35,14 +35,14 @@ int execute(char **args, char **front)
 		flag = 1;
 		command = get_location(command);
 	}
-	if (_strlen(command) > 1)
-	{
-		ret = (create_error(args,127));
-		free_env();
-		free_args(args, front);
-		free_alias_list(aliases);
-		_exit(ret);
-	}
+	/* if (_strlen(command) > 1) */
+	/* { */
+	/* 	ret = (create_error(args,127)); */
+	/* 	free_env(); */
+	/* 	free_args(args, front); */
+	/* 	free_alias_list(aliases); */
+	/* 	_exit(ret); */
+	/* } */
 	if (!command || (access(command, F_OK) == -1))
 	{
 		if (errno == EACCES)
